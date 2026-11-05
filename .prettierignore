@@ -1,0 +1,6 @@
+node_modules/
+dist/
+index.html
+assets/
+design-system/zed-schema.json
+extensions/*/themes/

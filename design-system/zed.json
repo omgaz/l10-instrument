@@ -1,0 +1,547 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "L10 Instrument",
+  "author": "Gary Chisholm",
+  "themes": [
+    {
+      "name": "L10 Instrument Light",
+      "appearance": "light",
+      "style": {
+        "background": "{surface.canvas}",
+        "background.appearance": "opaque",
+        "surface.background": "{surface.raised}",
+        "elevated_surface.background": "{surface.elevated}",
+        "panel.background": "{surface.panel}",
+        "editor.background": "{surface.editor}",
+        "editor.foreground": "{editor.foreground}",
+        "editor.gutter.background": "{editor.gutter.background}",
+        "editor.active_line.background": "{editor.active_line.background}",
+        "editor.highlighted_line.background": "{editor.highlighted_line.background}",
+        "editor.line_number": "{editor.line_number}",
+        "editor.active_line_number": "{editor.active_line_number}",
+        "editor.invisible": "{editor.invisible}",
+        "editor.indent_guide": "{editor.indent_guide}",
+        "editor.indent_guide_active": "{editor.indent_guide_active}",
+        "editor.wrap_guide": "{editor.wrap_guide}",
+        "editor.active_wrap_guide": "{editor.active_wrap_guide}",
+        "editor.subheader.background": "{editor.subheader.background}",
+        "editor.document_highlight.read_background": "{editor.document_highlight.read_background}",
+        "editor.document_highlight.write_background": "{editor.document_highlight.write_background}",
+        "editor.document_highlight.bracket_background": "{editor.document_highlight.bracket_background}",
+        "text": "{text.primary}",
+        "text.muted": "{text.muted}",
+        "text.placeholder": "{text.placeholder}",
+        "text.disabled": "{text.disabled}",
+        "text.accent": "{text.accent}",
+        "icon": "{icon}",
+        "icon.muted": "{icon.muted}",
+        "icon.disabled": "{icon.disabled}",
+        "icon.placeholder": "{icon.placeholder}",
+        "icon.accent": "{icon.accent}",
+        "border": "{border}",
+        "border.variant": "{border.variant}",
+        "border.focused": "{border.focused}",
+        "border.selected": "{border.selected}",
+        "border.disabled": "{border.disabled}",
+        "border.transparent": "{border.transparent}",
+        "pane.focused_border": "{pane.focused_border}",
+        "pane_group.border": "{pane_group.border}",
+        "panel.focused_border": "{panel.focused_border}",
+        "panel.indent_guide": "{panel.indent_guide}",
+        "panel.indent_guide_active": "{panel.indent_guide_active}",
+        "panel.indent_guide_hover": "{panel.indent_guide_hover}",
+        "element.background": "{element.background}",
+        "element.hover": "{element.hover}",
+        "element.active": "{element.active}",
+        "element.selected": "{element.selected}",
+        "element.disabled": "{element.disabled}",
+        "ghost_element.background": "{ghost_element.background}",
+        "ghost_element.hover": "{ghost_element.hover}",
+        "ghost_element.active": "{ghost_element.active}",
+        "ghost_element.selected": "{ghost_element.selected}",
+        "ghost_element.disabled": "{ghost_element.disabled}",
+        "title_bar.background": "{title_bar.background}",
+        "title_bar.inactive_background": "{title_bar.inactive_background}",
+        "toolbar.background": "{toolbar.background}",
+        "tab_bar.background": "{tab_bar.background}",
+        "tab.active_background": "{tab.active_background}",
+        "tab.inactive_background": "{tab.inactive_background}",
+        "status_bar.background": "{status_bar.background}",
+        "scrollbar.track.background": "{scrollbar.track.background}",
+        "scrollbar.track.border": "{scrollbar.track.border}",
+        "scrollbar.thumb.background": "{scrollbar.thumb.background}",
+        "scrollbar.thumb.hover_background": "{scrollbar.thumb.hover_background}",
+        "scrollbar.thumb.border": "{scrollbar.thumb.border}",
+        "drop_target.background": "{drop_target.background}",
+        "search.match_background": "{search.match_background}",
+        "link_text.hover": "{link_text.hover}",
+        "error": "{error}",
+        "error.background": "{error.background}",
+        "error.border": "{error.border}",
+        "warning": "{warning}",
+        "warning.background": "{warning.background}",
+        "warning.border": "{warning.border}",
+        "success": "{success}",
+        "success.background": "{success.background}",
+        "success.border": "{success.border}",
+        "info": "{info}",
+        "info.background": "{info.background}",
+        "info.border": "{info.border}",
+        "hint": "{hint}",
+        "hint.background": "{hint.background}",
+        "hint.border": "{hint.border}",
+        "created": "{created}",
+        "modified": "{modified}",
+        "deleted": "{deleted}",
+        "renamed": "{renamed}",
+        "conflict": "{conflict}",
+        "ignored": "{ignored}",
+        "hidden": "{hidden}",
+        "predictive": "{predictive}",
+        "unreachable": "{unreachable}",
+        "accents": [
+          "{accent.1}",
+          "{accent.2}",
+          "{accent.3}",
+          "{accent.4}",
+          "{accent.5}",
+          "{accent.6}"
+        ],
+        "syntax": {
+          "attribute": {
+            "color": "{code.attribute}"
+          },
+          "boolean": {
+            "color": "{code.scalar}"
+          },
+          "comment": {
+            "color": "{code.comment}"
+          },
+          "comment.doc": {
+            "color": "{code.comment}",
+            "font_style": "{style.annotation}"
+          },
+          "constant": {
+            "color": "{code.input}"
+          },
+          "constructor": {
+            "color": "{code.structure}",
+            "font_weight": "{weight.structure}"
+          },
+          "embedded": {
+            "color": "{code.identifier}"
+          },
+          "emphasis": {
+            "font_style": "{style.annotation}"
+          },
+          "emphasis.strong": {
+            "font_weight": "{weight.strong}"
+          },
+          "enum": {
+            "color": "{code.structure}",
+            "font_weight": "{weight.structure}"
+          },
+          "function": {
+            "color": "{code.behaviour}"
+          },
+          "function.method": {
+            "color": "{code.behaviour}"
+          },
+          "function.builtin": {
+            "color": "{code.builtin}"
+          },
+          "keyword": {
+            "color": "{code.control}"
+          },
+          "label": {
+            "color": "{code.input}"
+          },
+          "link_text": {
+            "color": "{code.link}"
+          },
+          "link_uri": {
+            "color": "{code.link-uri}",
+            "font_style": "{style.annotation}"
+          },
+          "number": {
+            "color": "{code.scalar}"
+          },
+          "operator": {
+            "color": "{code.operator}"
+          },
+          "predictive": {
+            "color": "{code.predictive}",
+            "font_style": "{style.annotation}"
+          },
+          "preproc": {
+            "color": "{code.preprocessor}"
+          },
+          "primary": {
+            "color": "{code.identifier}"
+          },
+          "property": {
+            "color": "{code.property}"
+          },
+          "punctuation": {
+            "color": "{code.punctuation}"
+          },
+          "punctuation.bracket": {
+            "color": "{code.bracket}"
+          },
+          "punctuation.delimiter": {
+            "color": "{code.punctuation}"
+          },
+          "punctuation.list_marker": {
+            "color": "{code.list-marker}"
+          },
+          "punctuation.special": {
+            "color": "{code.special}"
+          },
+          "string": {
+            "color": "{code.literal}"
+          },
+          "string.escape": {
+            "color": "{code.input}"
+          },
+          "string.regex": {
+            "color": "{code.literal}"
+          },
+          "string.special": {
+            "color": "{code.input}"
+          },
+          "tag": {
+            "color": "{code.control}"
+          },
+          "text.literal": {
+            "color": "{code.literal}"
+          },
+          "title": {
+            "color": "{code.title}",
+            "font_weight": "{weight.strong}"
+          },
+          "type": {
+            "color": "{code.structure}",
+            "font_weight": "{weight.structure}"
+          },
+          "type.builtin": {
+            "color": "{code.builtin}",
+            "font_weight": "{weight.structure}"
+          },
+          "variable": {
+            "color": "{code.variable}"
+          },
+          "variable.builtin": {
+            "color": "{code.control}"
+          },
+          "variable.parameter": {
+            "color": "{code.input}"
+          },
+          "variable.special": {
+            "color": "{code.scalar}"
+          },
+          "keyword.jsdoc": {
+            "color": "{documentation.control}"
+          },
+          "type.jsdoc": {
+            "color": "{documentation.structure}",
+            "font_weight": "{weight.documentation}"
+          },
+          "variable.jsdoc": {
+            "color": "{documentation.variable}"
+          }
+        },
+        "terminal.background": "{terminal.background}",
+        "terminal.foreground": "{terminal.foreground}",
+        "terminal.dim_foreground": "{terminal.dim_foreground}",
+        "terminal.bright_foreground": "{terminal.bright_foreground}",
+        "terminal.ansi.background": "{terminal.ansi.background}",
+        "terminal.ansi.black": "{terminal.ansi.black}",
+        "terminal.ansi.red": "{terminal.ansi.red}",
+        "terminal.ansi.green": "{terminal.ansi.green}",
+        "terminal.ansi.yellow": "{terminal.ansi.yellow}",
+        "terminal.ansi.blue": "{terminal.ansi.blue}",
+        "terminal.ansi.magenta": "{terminal.ansi.magenta}",
+        "terminal.ansi.cyan": "{terminal.ansi.cyan}",
+        "terminal.ansi.white": "{terminal.ansi.white}",
+        "terminal.ansi.bright_black": "{terminal.ansi.bright_black}",
+        "terminal.ansi.bright_red": "{terminal.ansi.bright_red}",
+        "terminal.ansi.bright_green": "{terminal.ansi.bright_green}",
+        "terminal.ansi.bright_yellow": "{terminal.ansi.bright_yellow}",
+        "terminal.ansi.bright_blue": "{terminal.ansi.bright_blue}",
+        "terminal.ansi.bright_magenta": "{terminal.ansi.bright_magenta}",
+        "terminal.ansi.bright_cyan": "{terminal.ansi.bright_cyan}",
+        "terminal.ansi.bright_white": "{terminal.ansi.bright_white}"
+      }
+    },
+    {
+      "name": "L10 Instrument Dark",
+      "appearance": "dark",
+      "style": {
+        "background": "{surface.canvas}",
+        "background.appearance": "opaque",
+        "surface.background": "{surface.raised}",
+        "elevated_surface.background": "{surface.elevated}",
+        "panel.background": "{surface.panel}",
+        "editor.background": "{surface.editor}",
+        "editor.foreground": "{editor.foreground}",
+        "editor.gutter.background": "{editor.gutter.background}",
+        "editor.active_line.background": "{editor.active_line.background}",
+        "editor.highlighted_line.background": "{editor.highlighted_line.background}",
+        "editor.line_number": "{editor.line_number}",
+        "editor.active_line_number": "{editor.active_line_number}",
+        "editor.invisible": "{editor.invisible}",
+        "editor.indent_guide": "{editor.indent_guide}",
+        "editor.indent_guide_active": "{editor.indent_guide_active}",
+        "editor.wrap_guide": "{editor.wrap_guide}",
+        "editor.active_wrap_guide": "{editor.active_wrap_guide}",
+        "editor.subheader.background": "{editor.subheader.background}",
+        "editor.document_highlight.read_background": "{editor.document_highlight.read_background}",
+        "editor.document_highlight.write_background": "{editor.document_highlight.write_background}",
+        "editor.document_highlight.bracket_background": "{editor.document_highlight.bracket_background}",
+        "text": "{text.primary}",
+        "text.muted": "{text.muted}",
+        "text.placeholder": "{text.placeholder}",
+        "text.disabled": "{text.disabled}",
+        "text.accent": "{text.accent}",
+        "icon": "{icon}",
+        "icon.muted": "{icon.muted}",
+        "icon.disabled": "{icon.disabled}",
+        "icon.placeholder": "{icon.placeholder}",
+        "icon.accent": "{icon.accent}",
+        "border": "{border}",
+        "border.variant": "{border.variant}",
+        "border.focused": "{border.focused}",
+        "border.selected": "{border.selected}",
+        "border.disabled": "{border.disabled}",
+        "border.transparent": "{border.transparent}",
+        "pane.focused_border": "{pane.focused_border}",
+        "pane_group.border": "{pane_group.border}",
+        "panel.focused_border": "{panel.focused_border}",
+        "panel.indent_guide": "{panel.indent_guide}",
+        "panel.indent_guide_active": "{panel.indent_guide_active}",
+        "panel.indent_guide_hover": "{panel.indent_guide_hover}",
+        "element.background": "{element.background}",
+        "element.hover": "{element.hover}",
+        "element.active": "{element.active}",
+        "element.selected": "{element.selected}",
+        "element.disabled": "{element.disabled}",
+        "ghost_element.background": "{ghost_element.background}",
+        "ghost_element.hover": "{ghost_element.hover}",
+        "ghost_element.active": "{ghost_element.active}",
+        "ghost_element.selected": "{ghost_element.selected}",
+        "ghost_element.disabled": "{ghost_element.disabled}",
+        "title_bar.background": "{title_bar.background}",
+        "title_bar.inactive_background": "{title_bar.inactive_background}",
+        "toolbar.background": "{toolbar.background}",
+        "tab_bar.background": "{tab_bar.background}",
+        "tab.active_background": "{tab.active_background}",
+        "tab.inactive_background": "{tab.inactive_background}",
+        "status_bar.background": "{status_bar.background}",
+        "scrollbar.track.background": "{scrollbar.track.background}",
+        "scrollbar.track.border": "{scrollbar.track.border}",
+        "scrollbar.thumb.background": "{scrollbar.thumb.background}",
+        "scrollbar.thumb.hover_background": "{scrollbar.thumb.hover_background}",
+        "scrollbar.thumb.border": "{scrollbar.thumb.border}",
+        "drop_target.background": "{drop_target.background}",
+        "search.match_background": "{search.match_background}",
+        "link_text.hover": "{link_text.hover}",
+        "error": "{error}",
+        "error.background": "{error.background}",
+        "error.border": "{error.border}",
+        "warning": "{warning}",
+        "warning.background": "{warning.background}",
+        "warning.border": "{warning.border}",
+        "success": "{success}",
+        "success.background": "{success.background}",
+        "success.border": "{success.border}",
+        "info": "{info}",
+        "info.background": "{info.background}",
+        "info.border": "{info.border}",
+        "hint": "{hint}",
+        "hint.background": "{hint.background}",
+        "hint.border": "{hint.border}",
+        "created": "{created}",
+        "modified": "{modified}",
+        "deleted": "{deleted}",
+        "renamed": "{renamed}",
+        "conflict": "{conflict}",
+        "ignored": "{ignored}",
+        "hidden": "{hidden}",
+        "predictive": "{predictive}",
+        "unreachable": "{unreachable}",
+        "accents": [
+          "{accent.1}",
+          "{accent.2}",
+          "{accent.3}",
+          "{accent.4}",
+          "{accent.5}",
+          "{accent.6}"
+        ],
+        "syntax": {
+          "attribute": {
+            "color": "{code.attribute}"
+          },
+          "boolean": {
+            "color": "{code.scalar}"
+          },
+          "comment": {
+            "color": "{code.comment}"
+          },
+          "comment.doc": {
+            "color": "{code.comment}",
+            "font_style": "{style.annotation}"
+          },
+          "constant": {
+            "color": "{code.input}"
+          },
+          "constructor": {
+            "color": "{code.structure}",
+            "font_weight": "{weight.structure}"
+          },
+          "embedded": {
+            "color": "{code.identifier}"
+          },
+          "emphasis": {
+            "font_style": "{style.annotation}"
+          },
+          "emphasis.strong": {
+            "font_weight": "{weight.strong}"
+          },
+          "enum": {
+            "color": "{code.structure}",
+            "font_weight": "{weight.structure}"
+          },
+          "function": {
+            "color": "{code.behaviour}"
+          },
+          "function.method": {
+            "color": "{code.behaviour}"
+          },
+          "function.builtin": {
+            "color": "{code.builtin}"
+          },
+          "keyword": {
+            "color": "{code.control}"
+          },
+          "label": {
+            "color": "{code.input}"
+          },
+          "link_text": {
+            "color": "{code.link}"
+          },
+          "link_uri": {
+            "color": "{code.link-uri}",
+            "font_style": "{style.annotation}"
+          },
+          "number": {
+            "color": "{code.scalar}"
+          },
+          "operator": {
+            "color": "{code.operator}"
+          },
+          "predictive": {
+            "color": "{code.predictive}",
+            "font_style": "{style.annotation}"
+          },
+          "preproc": {
+            "color": "{code.preprocessor}"
+          },
+          "primary": {
+            "color": "{code.identifier}"
+          },
+          "property": {
+            "color": "{code.property}"
+          },
+          "punctuation": {
+            "color": "{code.punctuation}"
+          },
+          "punctuation.bracket": {
+            "color": "{code.bracket}"
+          },
+          "punctuation.delimiter": {
+            "color": "{code.punctuation}"
+          },
+          "punctuation.list_marker": {
+            "color": "{code.list-marker}"
+          },
+          "punctuation.special": {
+            "color": "{code.special}"
+          },
+          "string": {
+            "color": "{code.literal}"
+          },
+          "string.escape": {
+            "color": "{code.input}"
+          },
+          "string.regex": {
+            "color": "{code.literal}"
+          },
+          "string.special": {
+            "color": "{code.input}"
+          },
+          "tag": {
+            "color": "{code.control}"
+          },
+          "text.literal": {
+            "color": "{code.literal}"
+          },
+          "title": {
+            "color": "{code.title}",
+            "font_weight": "{weight.strong}"
+          },
+          "type": {
+            "color": "{code.structure}",
+            "font_weight": "{weight.structure}"
+          },
+          "type.builtin": {
+            "color": "{code.builtin}",
+            "font_weight": "{weight.structure}"
+          },
+          "variable": {
+            "color": "{code.variable}"
+          },
+          "variable.builtin": {
+            "color": "{code.control}"
+          },
+          "variable.parameter": {
+            "color": "{code.input}"
+          },
+          "variable.special": {
+            "color": "{code.scalar}"
+          },
+          "keyword.jsdoc": {
+            "color": "{documentation.control}"
+          },
+          "type.jsdoc": {
+            "color": "{documentation.structure}",
+            "font_weight": "{weight.documentation}"
+          },
+          "variable.jsdoc": {
+            "color": "{documentation.variable}"
+          }
+        },
+        "terminal.background": "{terminal.background}",
+        "terminal.foreground": "{terminal.foreground}",
+        "terminal.dim_foreground": "{terminal.dim_foreground}",
+        "terminal.bright_foreground": "{terminal.bright_foreground}",
+        "terminal.ansi.background": "{terminal.ansi.background}",
+        "terminal.ansi.black": "{terminal.ansi.black}",
+        "terminal.ansi.red": "{terminal.ansi.red}",
+        "terminal.ansi.green": "{terminal.ansi.green}",
+        "terminal.ansi.yellow": "{terminal.ansi.yellow}",
+        "terminal.ansi.blue": "{terminal.ansi.blue}",
+        "terminal.ansi.magenta": "{terminal.ansi.magenta}",
+        "terminal.ansi.cyan": "{terminal.ansi.cyan}",
+        "terminal.ansi.white": "{terminal.ansi.white}",
+        "terminal.ansi.bright_black": "{terminal.ansi.bright_black}",
+        "terminal.ansi.bright_red": "{terminal.ansi.bright_red}",
+        "terminal.ansi.bright_green": "{terminal.ansi.bright_green}",
+        "terminal.ansi.bright_yellow": "{terminal.ansi.bright_yellow}",
+        "terminal.ansi.bright_blue": "{terminal.ansi.bright_blue}",
+        "terminal.ansi.bright_magenta": "{terminal.ansi.bright_magenta}",
+        "terminal.ansi.bright_cyan": "{terminal.ansi.bright_cyan}",
+        "terminal.ansi.bright_white": "{terminal.ansi.bright_white}"
+      }
+    }
+  ]
+}

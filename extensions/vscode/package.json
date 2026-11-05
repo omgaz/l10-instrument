@@ -1,0 +1,29 @@
+{
+  "name": "l10-instrument-vscode-theme",
+  "displayName": "L10 Instrument",
+  "description": "L10 Instrument light and dark themes for Visual Studio Code",
+  "version": "0.0.2",
+  "private": true,
+  "publisher": "l10-local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "L10 Instrument Light",
+        "uiTheme": "vs",
+        "path": "./themes/l10-instrument-light-color-theme.json"
+      },
+      {
+        "label": "L10 Instrument Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/l10-instrument-dark-color-theme.json"
+      }
+    ]
+  }
+}

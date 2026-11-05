@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+AGENTS.md
+/agents/
+/.agents/
+/.claude/
+/.copilot/
+/index.html
+/dist/

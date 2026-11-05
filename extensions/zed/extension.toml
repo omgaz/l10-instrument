@@ -1,0 +1,7 @@
+id = "l10-instrument-theme"
+name = "L10 Instrument"
+version = "0.0.2"
+schema_version = 1
+authors = ["Gary Chisholm"]
+description = "A TypeScript first, functional, accessible Zed theme with restraint"
+repository = "https://github.com/omgaz/l10-instrument"
