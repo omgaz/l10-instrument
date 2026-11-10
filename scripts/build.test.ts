@@ -57,6 +57,30 @@ test("exports resolved web tokens without leaking source definitions or editor m
   assert.throws(() => exportTokens(changed), /same token names/);
 });
 
+test("web materials are opt-in and fail the build on worst-case contrast", () => {
+  const { css } = exportTokens(source);
+  for (const rule of css.match(/^[^\n]*data-l10-material[^\n]*\{/gm)!)
+    assert(rule.includes('[data-l10-texture="on"]'), rule);
+  assert(css.includes("@media (prefers-contrast: more), (prefers-reduced-transparency: reduce)"));
+  assert(
+    css.includes("--l10-texture-blend: multiply;") && css.includes("--l10-texture-blend: overlay;"),
+  );
+  const failing = (mode: "light" | "dark", name: string, value: string, message: RegExp) => {
+    const changed = structuredClone(source);
+    changed.modes[mode][name] = { type: "color", value };
+    assert.throws(() => exportTokens(changed), message);
+  };
+  const light = source.modes.light;
+  failing("light", "texture.grain.matte", "#20211F40", /light text.muted on page/);
+  failing(
+    "light",
+    "material.input.placeholder",
+    String(light["text.placeholder"].value),
+    /placeholder on input/,
+  );
+  failing("dark", "action.label", "#1C1D1B", /dark action.label on primary button/);
+});
+
 test("Ghostty output contains exactly 16 ordered ANSI colors and opaque readable selections", () => {
   for (const [index, theme] of compileTerminal(source, terminalMapping).entries()) {
     const mode = index === 0 ? "light" : "dark";

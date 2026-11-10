@@ -205,6 +205,21 @@ children.
 
 The web token format is local to this project. It is not the DTCG format.
 
+The CSS export has an opt-in materials layer (web only; editors and terminals stay
+flat). Nothing applies until an ancestor has `data-l10-texture="on"`; then
+`data-l10-material` picks the role: `page` (matte stock, grain and top-lit falloff),
+`card` (paper grain, lip, shadow), `recessed` (inset, no grain), `input` (chalk: lighter,
+no grain) and `button` / `button primary` (enamel). Code and alerts stay flat and need
+an opaque background. `prefers-contrast: more` and `prefers-reduced-transparency`
+remove grain, gradients and shadows.
+
+Grain is an SVG `fractalNoise` tile whose noise drives alpha only, coloured by
+`texture.grain.*` (ink with `multiply` in light, paper with `overlay` in dark); token
+alpha is the grain's maximum. The build checks text, muted, placeholder and button
+labels against each material at its extremes (full grain, falloff, sheen, shade) and
+fails below 4.5:1. Primary sheen stops at `min(26%, padding)`, so only the shade is
+checked under the label.
+
 ## Colour decisions
 
 Properties and attributes share sage. Ordinary identifiers use material
